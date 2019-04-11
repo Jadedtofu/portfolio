@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 20px;
+    color: rgb(300, 300, 300);
+    text-align: center;
+    line-height: 1.5;
+    background-color: rgb(30, 30, 30);
+  }
+
+a {
+    text-decoration: none;
+    color: rgb(300, 300, 300);
+}
+
+h1, h2, h3, p {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+.logo {
+    font-size: 120%;
+    position: absolute;
+    margin-left: 30px;
+    padding-top: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+nav, footer {
+    background-color: rgb(60, 60, 60);
+    height: 65px;
+    width: 100%;
+}
+
+nav.top {
+    font-size: 100%;
+    position: fixed;
+    text-align: right;
+}
+
+nav.top li {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+nav.top li::after {
+    content: "";
+    margin-left: 30px;
+}
+
+.name-blurb {
+    padding-top: 80px;
+}
+
+.bio-detail, 
+.quiz-project,
+.project-2,
+.project-3 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 30px;
+}
+
+.project-2,
+.project-3 {
+    display: none;
+}
+
+.project-1-links,
+.project-2-links,
+.project-3-links {
+    padding-bottom: 2%;
+}
+
+.project-1-links li,
+.project-2-links li,
+.project-3-links li {
+    display: inline-block;
+}
+
+.project-1-links li::after,
+.project-2-links li::after,
+.project-3-links li::after {
+    content: "";
+    margin-left: 30px;
+}
+
+footer {
+    padding-top: 1.5%;
+    font-size: 90%;
+}
