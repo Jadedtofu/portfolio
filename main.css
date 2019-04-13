@@ -3,21 +3,48 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif; 
+    background-color: rgb(26, 24, 23);
+    color: rgb(190, 204, 218);
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    color: rgb(300, 300, 300);
-    text-align: center;
     line-height: 1.5;
-    background-color: rgb(30, 30, 30);
+    text-align: center;
   }
 
 a {
     text-decoration: none;
-    color: rgb(300, 300, 300);
+    color: rgb(39, 137, 248);
 }
+
+a:active {
+    color: rgb(122, 172, 230);
+}
+
+a:hover,
+button:hover {
+    color: rgb(0, 100, 214);
+}
+
+/* a:visited {
+    color: rgb(64, 90, 238);
+} */
 
 h1, h2, h3, p {
     margin: 0px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: rgb(68, 152, 248);
+    font-size: 38px;
+}
+
+h3 {
+    color: rgb(65, 90, 235);
+    font-size: 24px;
 }
 
 ul {
@@ -26,16 +53,23 @@ ul {
 }
 
 .logo {
-    font-size: 120%;
-    position: absolute;
+    font-size: 60%;
+    margin-top: 14px;
     margin-left: 30px;
-    padding-top: 12px;
+    position: absolute;
     text-align: left;
-    vertical-align: middle;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: rgb(68, 152, 248);
+    padding: 0;
 }
 
 nav, footer {
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(15, 14, 12);
     height: 65px;
     width: 100%;
 }
@@ -56,41 +90,104 @@ nav.top li::after {
     margin-left: 30px;
 }
 
-.name-blurb {
-    padding-top: 80px;
+.name-contact {
+    display: inline-block;
+    padding: 140px 60px 60px;
+    max-width: 500px;
 }
 
-.bio-detail, 
-.quiz-project,
-.project-2,
-.project-3 {
-    max-width: 1000px;
+.name-main {
+    padding-bottom: 10px;
+}
+
+.web-dev {
+    padding-bottom: 6px;
+}
+
+.languages {
+    padding-right: 20px;
+}
+
+.lang-icons i,
+.framework-icons i {
+    padding: 8px 2px 20px;
+}
+
+.contact-icons i {
+    padding: 2px 6px;
+}
+
+.bio-section {
+    display: inline-block;
+    max-width: 680px;
+    padding: 0px 40px 40px;
+    text-align: left;
+}
+
+.snippet {
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.lang-frameworks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     margin: 0 auto;
-    padding: 15px 30px;
+    max-width: 320px;
 }
 
-.project-2,
+.lang-icons,
+.framework-icons {
+    color: rgb(65, 90, 235);
+}
+
+/* .frameworks {
+    display: none;
+} */
+
+.projects-title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.project-sections {
+    border: solid 3px rgb(39, 137, 248);
+    margin: 0 auto;
+    margin-bottom: 75px;
+    padding: 60px 80px 0px;
+    max-width: 80%;
+}
+
+/* .project-2,
 .project-3 {
     display: none;
+} */
+
+.quiz-project, 
+.project-2,
+.project-3 {
+    overflow: hidden;
+    padding-bottom: 60px;
 }
 
-.project-1-links,
-.project-2-links,
-.project-3-links {
-    padding-bottom: 2%;
+.quiz-header,
+.project2-header,
+.project3-header {
+    padding-bottom: 12px;
 }
 
-.project-1-links li,
-.project-2-links li,
-.project-3-links li {
-    display: inline-block;
+.quiz-image,
+.project2-img,
+.project3-img {
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 40px;
 }
 
-.project-1-links li::after,
-.project-2-links li::after,
-.project-3-links li::after {
-    content: "";
-    margin-left: 30px;
+.project-detail {
+    text-align: left;
 }
 
 footer {
