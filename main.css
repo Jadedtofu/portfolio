@@ -2,9 +2,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --nav-footer-color: rgb(15, 14, 12);
+    --main-bg-color: rgb(26, 24, 23);
+    --main-header-link-color: rgb(49, 143, 250);
+    --sub-header-color:  rgb(65, 90, 235);
+    --body-font-color: rgb(190, 204, 218);
+}
+
 body {
-    background-color: rgb(26, 24, 23);
-    color: rgb(190, 204, 218);
+    background-color: var(--main-bg-color);
+    color: var(--body-font-color);
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -13,20 +21,19 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(39, 137, 248);
+    color: var(--main-header-link-color);
 }
 
 a:active {
     color: rgb(122, 172, 230);
 }
 
-a:hover,
-button:hover {
+a:hover {
     color: rgb(0, 100, 214);
 }
 
 /* a:visited {
-    color: rgb(64, 90, 238);
+    color: rgb(3, 47, 194);
 } */
 
 h1, h2, h3, p {
@@ -38,12 +45,12 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: rgb(68, 152, 248);
+    color: var(--main-header-link-color);
     font-size: 38px;
 }
 
 h3 {
-    color: rgb(65, 90, 235);
+    color: var(--sub-header-color);
     font-size: 24px;
 }
 
@@ -61,7 +68,7 @@ ul {
 }
 
 nav, footer {
-    background-color: rgb(15, 14, 12);
+    background-color: var(--nav-footer-color);
     height: 65px;
     width: 100%;
 }
@@ -141,7 +148,7 @@ nav.top li::after {
 
 .lang-icons,
 .framework-icons {
-    color: rgb(65, 90, 235);
+    color: var(--sub-header-color);
 }
 
 .frameworks {
@@ -155,7 +162,7 @@ nav.top li::after {
 }
 
 .project-sections {
-    border: solid 3px rgb(39, 137, 248);
+    border: solid 3px var(--main-header-link-color);
     margin: 0 auto;
     margin-bottom: 75px;
     padding: 50px 40px 10px;
