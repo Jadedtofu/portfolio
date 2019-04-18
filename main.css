@@ -138,9 +138,9 @@ nav.top li::after {
 }
 
 /*  comment out line 130 - 132 to reveal frameworks I don't know yet */
-/* .frameworks {
+.frameworks {
     display: none;
-} */
+}
 
 .lang-icons,
 .framework-icons {
@@ -196,10 +196,10 @@ nav.top li::after {
 }
 
 /*  comment out line 174 - 177 to reveal placeholder projects */
-/* section.project-2,
+section.project-2,
 section.project-3 {
     display: none;
-} */
+}
 
 .project-section {
     display: flex;
