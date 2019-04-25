@@ -6,7 +6,7 @@
     --nav-footer-color: rgb(15, 14, 12);
     --main-bg-color: rgb(26, 24, 23);
     --main-header-link-color: rgb(61, 152, 255);
-    --link-color: rgb(71, 197, 255);
+    --link-color: rgb(87, 174, 255);
     --sub-header-color:  rgb(62, 123, 255);
     --body-font-color: rgb(204, 218, 233);
     --link-hover-focus-color: rgb(255, 156, 42);
@@ -97,8 +97,7 @@ nav.top li {
 
 nav.top li::after {
     content: "";
-    padding-left: 10px;
-    padding-right: 13px;
+    padding-right: 20px;
 }
 
 /* .menu-icon {     // to be used later
