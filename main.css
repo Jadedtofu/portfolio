@@ -142,7 +142,7 @@ nav.top li::after {
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 0 auto;
-    max-width: 320px;
+    max-width: 360px;
 }
 
 .languages,
