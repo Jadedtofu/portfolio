@@ -28,4 +28,4 @@ function handleStartPortfolio() {   // document ready function
     projectLinkPress();
     contactLinkPress();
 }
-$(handleStartPortfolio);
+$(handleStartPortfolio); // $ is not defined

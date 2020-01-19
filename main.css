@@ -26,10 +26,6 @@ a {
     color: var(--main-header-link-color);
 }
 
-nav li a {
-    color: var(--link-color);
-}
-
 a:active {
     color: rgb(122, 172, 230);
 }
@@ -43,9 +39,9 @@ a:focus {
     border-bottom: 2px solid;
 }
 
-/* a:visited {
-    color: rgb(3, 47, 194);
-} */
+nav li a {
+    color: var(--link-color);
+}
 
 h1, h2, h3, p {
     margin: 0px;
@@ -70,14 +66,6 @@ ul {
     margin: 0;
 }
 
-.logo {
-    font-size: 60%;
-    margin-top: 14px;
-    margin-left: 20px;
-    position: absolute;
-    text-align: left;
-}
-
 nav, footer {
     background-color: var(--nav-footer-color);
     height: 65px;
@@ -100,26 +88,53 @@ nav.top li::after {
     padding-right: 20px;
 }
 
-/* .menu-icon {     // to be used later
-    display: none;
+.logo {
+    font-size: 60%;
+    margin-top: 14px;
+    margin-left: 20px;
+    position: absolute;
+    text-align: left;
 }
 
-.menu-horizontal {  // to be used later
-    display: none;
-} */
+.name-bio-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 45%;
+}
 
 .name-contact {
-    display: inline-block;
-    padding: 140px 60px 60px;
+    padding: 40px 60px 0px 60px;
     max-width: 500px;
 }
 
 .name-main {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 .web-dev {
     padding-bottom: 6px;
+}
+
+.about-me-header {
+    font-size: 1.6em;
+    padding: 30px 0px 20px 0px;
+}
+
+.snippet {
+    text-align: center;
+}
+
+.bio-section {
+    max-width: 680px;
+    margin-top: 20px;
+    padding: 20px 60px 20px 60px;
+    text-align: left;
 }
 
 .lang-frameworks {
@@ -136,11 +151,6 @@ nav.top li::after {
     padding-right: 10px;
 }
 
-/*  comment out line 130 - 132 to reveal frameworks I don't know yet */
-.frameworks {
-    display: none;
-}
-
 .lang-icons,
 .framework-icons {
     color: var(--sub-header-color);
@@ -151,53 +161,10 @@ nav.top li::after {
     padding: 8px 2px 20px;
 }
 
-/* comment in lines 150 - 160 for colors of language icons */
-/* .fa-html5 {
-    color: rgb(236, 49, 35);
-}
-
-.fa-css3 {
-    color: rgb(38, 126, 226);
-}
-
-.fa-js-square {
-    color: rgb(240, 225, 24);
-} */
-
-.contact-icons i {
-    padding: 2px 10px;
-}
-
-.bio-section {
-    display: inline-block;
-    max-width: 680px;
-    padding: 0px 40px 20px;
-    text-align: left;
-}
-
-.snippet {
-    padding-bottom: 6px;
-    text-align: center;
-}
-
 .projects-title {
     padding-top: 80px;
     padding-bottom: 30px;
     margin: 0 auto;
-}
-
-.project-sections {
-    border: solid 3px var(--main-header-link-color);
-    margin: 0 auto;
-    margin-bottom: 75px;
-    padding: 50px 40px 10px;
-    max-width: 80%;
-}
-
-/*  comment out line 174 - 177 to reveal placeholder projects */
-section.project-2,
-section.project-3 {
-    display: none;
 }
 
 .project-section {
@@ -206,7 +173,15 @@ section.project-3 {
     justify-content: space-around;
     margin: 0 auto;
     max-width: 100%;
-    padding-bottom: 40px;
+    border: solid 4px var(--main-header-link-color);
+    margin: 0 auto;
+    margin-bottom: 75px;
+    padding: 50px 40px 40px 40px;
+    max-width: 80%;
+}
+
+.project-name-header {
+    padding: 10px 0px 10px 0px;
 }
 
 .project-description {
@@ -230,6 +205,14 @@ section.project-3 {
     text-align: left;
 }
 
+.contact-me-section {
+    padding-bottom: 25px;
+}
+
+.contact-icons i {
+    padding: 2px 10px;
+}
+
 footer {
     font-size: 14px;
     padding-top: 20px;
@@ -242,11 +225,11 @@ footer {
     }
 
     .logo {
-        font-size: 50%;
+        font-size: 55%;
         line-height: 1.2;
         margin-left: 14px;
-        margin-top: 12px;
-        width: 10%;
+        margin-top: 20px;
+        width: 22%;
     }
 
     nav.top li {
@@ -277,16 +260,6 @@ footer {
 
     .projects-title {
         padding-bottom: 16px;
-    }
-
-    .project-sections {
-        padding: 14px 14px 10px;
-        margin-bottom: 20px;
-        max-width: 85%;
-    }
-
-    .project-section {
-        padding-bottom: 30px;
     }
 
     .quiz-image,
