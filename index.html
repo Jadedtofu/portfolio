@@ -22,31 +22,32 @@
       </nav>
 
       <main role="main">
-        <div class="name-bio-info">
+        <section class="name-bio-info" aria-label="name and bio information">
             <div id="name-contact" class="name-contact">
                 <header class="name-main" role="banner">
                     <img class="profile-photo" src="https://media-exp1.licdn.com/dms/image/C5603AQHF4l9amJiHdQ/profile-displayphoto-shrink_200_200/0?e=1585180800&v=beta&t=PCnKcp50MbhL9hslz4jNdNMOk4xsdXX9l7lGBRYiiRY" alt="Lei profile photo">
                     <h2>Hi, my name is Lei</h2>
                 </header>
+
                     <p class="web-dev">I'm a Web Developer based in San Diego</p>
 
                 <div class="lang-frameworks">
-                <section class="languages" aria-label="languages">
-                    <p>Languages:</p>
-                    <div class="lang-icons">
-                        <i class="fab fa-html5 fa-lg"></i>
-                        <i class="fab fa-css3 fa-lg"></i>
-                        <i class="fab fa-js-square fa-lg"></i>
-                    </div>
-                </section>
+                    <section class="languages" aria-label="languages">
+                        <p>Languages:</p>
+                        <div class="lang-icons">
+                            <i class="fab fa-html5 fa-lg"></i>
+                            <i class="fab fa-css3 fa-lg"></i>
+                            <i class="fab fa-js-square fa-lg"></i>
+                        </div>
+                    </section>
 
-                <section class="frameworks" aria-label="frameworks">
-                    <p>Frameworks</p>
-                    <div class="framework-icons">
-                        <i class="fab fa-react fa-lg"></i>
-                        <i class="fab fa-node-js fa-lg"></i>
-                    </div>
-                </section>
+                    <section class="frameworks" aria-label="frameworks">
+                        <p>Frameworks</p>
+                        <div class="framework-icons">
+                            <i class="fab fa-react fa-lg"></i>
+                            <i class="fab fa-node-js fa-lg"></i>
+                        </div>
+                    </section>
                 </div>
             </div>
 
@@ -58,58 +59,58 @@
                     <p class="background">My background started with video game & art design. Then I learned how to be a paralegal, and now I'm coding because I realized I enjoy creating and building things. Currently, I work with HTML, CSS, and JavaScript to make ideas real as I continually work to improve my problem-solving skills. I'm also experienced with the React and Node.js frameworks as well as PostgreSQL. As my developer skills keep growing, I hope to create more projects and/or collaborate with others. Outside of code, my love for video games, art, cooking, and Earl Grey tea remain strong.</p>
                 </section>
             </div>
-        </div>
+        </section>
 
         <header id="projects" class="projects-title" aria-label="projects" role="banner">
             <h2>Projects:</h2>
         </header>
 
-        <div class="project-sections">
-        <section class="project-section project-1" aria-label="project-1 flavor logs">
-                <a href="https://flavor-logs-app.now.sh/" target="_blank"><img class="project1-img" src="images/flavor-logs.jpg" alt="Flavor Logs Application landing Page"></a>
+        <section class="project-sections" aria-label="projects">
+            <section class="project-section project-1" aria-label="flavor logs">
+                    <a href="https://flavor-logs-app.now.sh/" target="_blank" aria-label="flavor logs live link with image"><img class="project1-img" src="images/flavor-logs.jpg" alt="Flavor Logs Application Landing Page"></a>
 
-                <div class="project-description">
-                    <header class="project1-header" role="banner">
-                        <h3 class="project-name-header">Flavor Logs</h3>
+                    <section class="project-description" aria-label="flavor logs description">
+                        <header class="project1-header" role="banner">
+                            <h3 class="project-name-header">Flavor Logs</h3>
+                        </header>
+                        <section class="project-links" aria-label="live and GitHub links">
+                            <p class="live-link"><a href="https://flavor-logs-app.now.sh/" target="_blank" aria-label="flavor logs live link"><i class="fas fa-external-link-alt"></i> Live Link</a></p>
+                            <p class="github-link"><a href="https://github.com/Jadedtofu/flavor-logs-app" target="_blank" aria-label="flavor logs GitHub"><i class="fab fa-github fa-lg"></i> Git Hub</a></p>
+                        </section>
+                        <p class="project-detail"> An application for food lovers to keep a record of dishes they've tried at various eateries, old or new. Users are able to add, edit, and delete Flavor Logs as well as Eateries. An image of the dish tried can be added to the log to further enhance its description. Created using React, CSS, Node.js, Express, CSS using a PostgreSQL database.</p>
+                    </section>
+            </section>
+
+            <section class="project-section project-2" aria-label="chore share">
+                <a href="https://chore-share-app.now.sh/" target="_blank" aria-label="chore share live link with image"><img class="project2-img" src="images/chore-share.jpg" alt="Chore Share Application Landing Page"></a>
+                
+                <section class="project-description" aria-label="chore share description">
+                    <header class="project2-header" role="banner">
+                        <h3 class="project-name-header">Chore Share</h3>
                     </header>
-                    <div class="project-links">
-                        <p class="live-link"><a href="https://flavor-logs-app.now.sh/" target="_blank" aria-label="project-1 flavor logs"><i class="fas fa-external-link-alt"></i> Live Link</a></p>
-                        <p class="github-link"><a href="https://github.com/Jadedtofu/flavor-logs-app" target="_blank" aria-label="flavor logs GitHub"><i class="fab fa-github fa-lg"></i> Git Hub</a></p>
-                    </div>
-                    <p class="project-detail"> An application for food lovers to keep a record of dishes they've tried at various eateries, old or new. Users are able to add, edit, and delete Flavor Logs as well as Eateries. An image of the dish tried can be added to the log to further enhance its description. Created using React, CSS, Node.js, Express, CSS using a PostgreSQL database.</p>
-                </div>
-        </section>
+                    <section class="project-links" aria-label="live and GitHub links">
+                        <p class="live-link"><a href="https://chore-share-app.now.sh/" target="_blank" aria-label="chore share live link"><i class="fas fa-external-link-alt"></i> Live Link</a></p>
+                        <p class="github-link"><a href="https://github.com/Jadedtofu/chore-share-app" target="_blank" aria-label="chore share GitHub"><i class="fab fa-github fa-lg"></i> Git Hub </a></p>
+                    </section>
+                    <p class="project-detail"> A simple application for roommates to share chores in one place. Roommies and Chores can be added or deleted while Chores can be marked complete. When a Roomie is removed, all the Chores relating to that Roomie will be removed. Created using React, CSS, Node.js, Express, CSS with a PostgreSQL database.</p>
+                </section>
+            </section>
 
-        <section class="project-section project-2" aria-label="project-2 chore share">
-            <a href="https://chore-share-app.now.sh/" target="_blank"><img class="project2-img" src="images/chore-share.jpg" alt="Chore Share Application Landing Page"></a>
-            
-            <div class="project-description">
-                <header class="project2-header" role="banner">
-                    <h3 class="project-name-header">Chore Share</h3>
-                </header>
-                <div class="project-links">
-                    <p class="live-link"><a href="https://chore-share-app.now.sh/" target="_blank" aria-label="project-2 chore share"><i class="fas fa-external-link-alt"></i> Live Link</a></p>
-                    <p class="github-link"><a href="https://github.com/Jadedtofu/chore-share-app" target="_blank" aria-label="chore share GitHub"><i class="fab fa-github fa-lg"></i> Git Hub </a></p>
-                </div>
-                <p class="project-detail"> A simple application for roommates to share chores in one place. Roommies and Chores can be added or deleted while Chores can be marked complete. When a Roomie is removed, all the Chores relating to that Roomie will be removed. Created using React, CSS, Node.js, Express, CSS with a PostgreSQL database.</p>
-            </div>
+            <section class="project-section project-3" aria-label="programming focus">
+                <a href="https://thinkful-nights-weekends-codename-camel.github.io/programmingFocus/" target="_blank" aria-label="programming focus live link with image"><img class="project3-img" src="images/programming-focus.jpg" alt="Programming Focus Search Application Landing Page"></a>
+                
+                <section class="project-description" aria-label="programming focus description">
+                    <header class="project3-header" role="banner">
+                        <h3 class="project-name-header">Programming Focus</h3>
+                    </header>
+                    <section class="project-links" aria-label="live and GitHub links">
+                        <p class="live-link"><a href="https://thinkful-nights-weekends-codename-camel.github.io/programmingFocus/" target="_blank" aria-label="programming focus live link"><i class="fas fa-external-link-alt"></i> Live Link</a></p>
+                        <p class="github-link"><a href="https://github.com/thinkful-nights-weekends-codename-camel/programmingFocus" target="_blank" aria-label="programming focus GitHub"><i class="fab fa-github fa-lg"></i> Git Hub </a></p>
+                    </section>
+                    <p class="project-detail"> A search application meant for new programmers. It utilizes the Stack Overflow and YouTube APIs to assist in a focused search to further assist developing programmers through the learning process. Search results may vary depending on the keywords used. Created using HTML, CSS, JavaScript, and jQuery</p>
+                </section>
+            </section>
         </section>
-
-        <section class="project-section project-3" aria-label="project-3 programming focus">
-            <a href="https://thinkful-nights-weekends-codename-camel.github.io/programmingFocus/" target="_blank"><img class="project3-img" src="images/programming-focus.jpg" alt="Programming Focus Search Application Landing Page"></a>
-            
-            <div class="project-description">
-                <header class="project3-header" role="banner">
-                    <h3 class="project-name-header">Programming Focus</h3>
-                </header>
-                <div class="project-links">
-                    <p class="live-link"><a href="https://thinkful-nights-weekends-codename-camel.github.io/programmingFocus/" target="_blank" aria-label="project-3 programming focus"><i class="fas fa-external-link-alt"></i> Live Link</a></p>
-                    <p class="github-link"><a href="https://github.com/thinkful-nights-weekends-codename-camel/programmingFocus" target="_blank" aria-label="programming focus GitHub"><i class="fab fa-github fa-lg"></i> Git Hub </a></p>
-                </div>
-                <p class="project-detail"> A search application meant for new programmers. It utilizes the Stack Overflow and YouTube APIs to assist in a focused search to further assist developing programmers through the learning process. Search results may vary depending on the keywords used. Created using HTML, CSS, JavaScript, and jQuery</p>
-            </div>
-        </section>
-        </div>
 
         <section class="contact-me-section" aria-label="contact-me">
             <p id="contacts">Contact Me:</p>
