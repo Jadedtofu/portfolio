@@ -214,7 +214,7 @@ nav.top li::after {
 
 .live-link,
 .github-link {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     text-align: bottom;
 }
 
