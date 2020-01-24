@@ -230,7 +230,6 @@ footer {
     padding-top: 20px;
 }
 
-/* min and max width used to better control responsive design*/
 @media screen and (min-width: 320px) {
     body {
         font-size: 100%;
