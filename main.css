@@ -192,11 +192,6 @@ nav.top li::after {
     padding: 0px 20px 20px;
 }
 
-.fa-external-link-alt::before,
-.fa-github::before {
-    font-size: 0.95em;
-}
-
 .fa-external-link-alt,
 .fa-github {
     padding-right: 5px;
@@ -210,12 +205,6 @@ nav.top li::after {
 
 .live-link {
     padding-right: 30px;
-}
-
-.live-link,
-.github-link {
-    /* border: 1px solid white; */
-    text-align: bottom;
 }
 
 .project1-img,
@@ -242,21 +231,21 @@ footer {
 }
 
 /* min and max width used to better control responsive design*/
-@media screen and (min-width: 320px) and (max-width: 400px) {
+@media screen and (min-width: 320px) {
     body {
         font-size: 100%;
     }
 
     .logo {
-        font-size: 55%;
+        font-size: 0.52em;
         line-height: 1.2;
         margin-left: 14px;
         margin-top: 20px;
-        width: 22%;
+        width: 100px;
     }
 
     nav.top li {
-        font-size: 100%;
+        font-size: 0.9em;
         margin-top: 20px;
     }
 
@@ -265,7 +254,7 @@ footer {
     }
 
     .name-contact {
-        padding: 50px 20px 40px;
+        padding: 24px 20px 30px 20px;
     }
 
     .contact-icons i {
@@ -278,7 +267,7 @@ footer {
     }
 
     .bio-section {
-        padding: 0px 14px 20px;
+        padding: 0px 20px 20px;
     }
 
     .project-1,
@@ -300,17 +289,45 @@ footer {
         width: 100%;
     }
 
+    .project-name-header {
+        font-size: 1.15em;
+    }
+
     .project-description {
         max-width: 100%;
         padding: 0px;
     }
 
-    .project-description i {
-        font-size: 200%;
+    .project-links { 
+        padding-top: 4px;
+        padding-bottom: 12px;
+    }
+
+    .fa-external-link-alt::before {
+        font-size: 1.2em;
+    }
+
+    .fa-lg::before {
+        font-size: 1.1em;
+    }
+
+
+    .live-link {
+        padding-right: 20px;
+    }
+
+    .live-link,
+    .github-link {
+        font-size: 0.95em;
+        text-align: bottom;
+    }
+
+    .fa-2x::before{
+        font-size: 1.2em;
     }
   }
 
-  @media screen and (min-width: 401px) and (max-width: 600px) {
+  @media screen and (min-width: 400px) {
     body {
         font-size: 110%;
     }
@@ -324,7 +341,7 @@ footer {
     }
     
     .bio-section {
-        padding: 0px 24px 24px;
+        padding: 0px 34px 34px;
     }
 
     .contact-icons i {
@@ -346,38 +363,53 @@ footer {
         width: 100%;
     }
 
+    .project-name-header {
+        font-size: 1.3em;
+    }
+
     .project-description {
         max-width: 100%;
         padding: 0px;
     }
 
-    .project-description i {
-        font-size: 160%;
+    .live-link,
+    .github-link {
+        font-size: 0.96em;
     }
   }
 
-  @media screen and (min-width: 601px) and (max-width: 768px) {
+  @media screen and (min-width: 600px) {
+    .bio-section {
+        padding: 0px 40px 40px;
+    }
+
+    .project-name-header {
+        font-size: 1.3em;
+    }
+
     .project-description {
         max-width: 95%;
     }
-
-    .project-description i {
-        font-size: 160%;
-    }
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 768px) {
       .project-description {
           max-width: 80%;
       }
-
-      .project-description i {
-          font-size: 140%;
-      }
   }
 
-  @media screen and (min-width: 1025px) and (max-width: 1185px) {
-      .project-description {
+  @media screen and (min-width: 1024px) {
+
+    .project-name-header {
+        font-size: 1.4em;
+    }
+
+    .live-link,
+    .github-link {
+        font-size: 1em;
+    }
+
+    .project-description {
           max-width: 70%;
       }
   }
