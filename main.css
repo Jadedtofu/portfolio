@@ -105,6 +105,7 @@ nav.top li::after {
 
 .profile-photo {
     border-radius: 50%;
+    padding-top: 20px;
     width: 45%;
 }
 
@@ -149,6 +150,7 @@ nav.top li::after {
 .frameworks {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 6px;
 }
 
 .lang-icons,
@@ -181,7 +183,8 @@ nav.top li::after {
 }
 
 .project-name-header {
-    padding: 10px 0px 10px 0px;
+    font-size: 1.3em;
+    padding: 0px 0px 8px 0px;
 }
 
 .project-description {
@@ -189,20 +192,36 @@ nav.top li::after {
     padding: 0px 20px 20px;
 }
 
-.project1-header,
-.project2-header,
-.project3-header {
+.fa-external-link-alt::before,
+.fa-github::before {
+    font-size: 0.95em;
+}
+
+.fa-external-link-alt,
+.fa-github {
+    padding-right: 5px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
     padding-bottom: 10px;
+}
+
+.live-link {
+    padding-right: 30px;
+}
+
+.live-link,
+.github-link {
+    border: 1px solid white;
+    text-align: bottom;
 }
 
 .project1-img,
 .project2-img,
 .project3-img {
     padding: 10px;
-}
-
-.fa-github {
-    padding-right: 5px;
 }
 
 .project-detail {
